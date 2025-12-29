@@ -9,7 +9,7 @@ import OurWork from './pages/OurWork'
 import WhatIDo from './pages/WhatIDo'
 import AboutUs from './pages/AboutUs'
 import PageNotFoud from './pages/PageNotFoud'
-import ScrollToTop from './components/ScrolltoTop'
+import ScrolltoTop from './components/ScrolltoTop'
 
 const MainLayout = () => {
   return (
@@ -24,7 +24,7 @@ const MainLayout = () => {
 const App = () => {
   return (
     <BrowserRouter>
-    <ScrollToTop />
+    <ScrolltoTop />
       <Routes>
         <Route element={<MainLayout />}>
           <Route path='/' element={<Home />} />
