@@ -16,7 +16,7 @@ const ContactUs = () => {
           <p className="text-gray-400 text-sm leading-relaxed">
             I'm currently available for freelance work or full-time positions.
           </p>
-          
+
           <div className="space-y-4">
             <div className="flex items-center gap-3 text-gray-300 group">
               <div className="w-auto h-auto rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
@@ -36,8 +36,8 @@ const ContactUs = () => {
         <form className="space-y-5">
           <div className="space-y-2">
             <label className="text-xs uppercase tracking-widest text-gray-500 ml-1">Your Name</label>
-            <input 
-              type="text" 
+            <input
+              type="text"
               className="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-all text-sm"
               placeholder="Enter your name"
             />
@@ -45,8 +45,8 @@ const ContactUs = () => {
 
           <div className="space-y-2">
             <label className="text-xs uppercase tracking-widest text-gray-500 ml-1">Email Address</label>
-            <input 
-              type="email" 
+            <input
+              type="email"
               className="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-all text-sm"
               placeholder="email@example.com"
             />
@@ -54,7 +54,7 @@ const ContactUs = () => {
 
           <div className="space-y-2">
             <label className="text-xs uppercase tracking-widest text-gray-500 ml-1">Message</label>
-            <textarea 
+            <textarea
               rows="3"
               className="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-all text-sm resize-none"
               placeholder="Tell me about your project..."
@@ -62,7 +62,7 @@ const ContactUs = () => {
           </div>
 
           <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-2xl transition-all shadow-lg shadow-blue-600/20 flex items-center justify-center gap-2 group">
-            Send Message 
+            Send Message
             <FaPaperPlane className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform text-xs" />
           </button>
         </form>

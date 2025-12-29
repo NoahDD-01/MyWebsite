@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import ContactUs from './ContactUs';
+import ContactUs from "../pages/ContactUs";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    // Popup အတွက် State အသစ်
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -14,10 +13,10 @@ const Header = () => {
 
     const navLinks = [
         { name: "HOME", to: "/" },
-        { name: "OUR WORK", to: "" },
-        { name: "WHAT WE DO", to: "" },
+        { name: "OUR WORK", to: "/ourwork" },
+        { name: "WHAT WE DO", to: "/whatido" },
         { name: "PORTFOLIO", to: "/portfolio" },
-        { name: "ABOUT US", to: "" },
+        { name: "ABOUT US", to: "/aboutus" },
     ];
 
     return (

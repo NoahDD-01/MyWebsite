@@ -1,68 +1,82 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
+
+    const socialLinks = [
+        { icon: "fab fa-facebook-f", link: "https://facebook.com" },
+        { icon: "fab fa-instagram", link: "https://instagram.com" },
+        { icon: "fab fa-twitter", link: "https://twitter.com" },
+        { icon: "fab fa-linkedin-in", link: "https://linkedin.com" },
+        { icon: "far fa-envelope", link: "mailto:info@phyo.com" }
+    ];
+
     return (
-        <div>
-
-            <footer className="bg-gray-900 text-gray-200 py-10 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto">
-
-                    <div className="flex flex-col md:flex-row justify-between pb-8 space-y-8 md:space-y-0">
-
-                        <div className="w-full md:w-2/5">
-                            <div className="text-4xl font-extrabold tracking-tight text-white mb-1">PHYO</div>
-                            <p className="text-gray-400 text-base mb-6">Hello</p>
-                            <div className="flex space-x-4">
-                                <Link to="https://www.facebook.com/" className="text-white hover:text-shadow-white transition transform hover:-translate-y-5 duration-600 inline-block"><i className="fab fa-facebook-square text-2xl"></i></Link>
-                                <Link to="https://www.facebook.com/" className="text-white hover:text-shadow-white transition transform hover:-translate-y-5 duration-600 inline-block"><i className="fab fa-instagram text-2xl"></i></Link>
-                                <Link to="https://www.facebook.com/" className="text-white hover:text-shadow-white transition transform hover:-translate-y-5 duration-600 inline-block"><i className="fab fa-twitter text-2xl"></i></Link>
-                                <Link to="https://www.facebook.com/" className="text-white hover:text-shadow-white transition transform hover:-translate-y-5 duration-600 inline-block"><i className="fab fa-youtube text-2xl"></i></Link>
-                                <Link to="https://www.facebook.com/" className="text-white hover:text-shadow-white transition transform hover:-translate-y-5 duration-600 inline-block"><i className="fab fa-flipboard text-2xl"></i></Link>
-                                <Link to="https://www.facebook.com/" className="text-white hover:text-shadow-white transition transform hover:-translate-y-5 duration-600 inline-block"><i className="far fa-envelope text-2xl"></i></Link>
-                                <Link to="https://www.facebook.com/" className="text-white hover:text-shadow-white transition transform hover:-translate-y-5 duration-600 inline-block"><i className="fab fa-linkedin text-2xl"></i></Link>
-                            </div>
+        <footer className="bg-[#0f172a] text-gray-300 py-16 px-6 sm:px-12">
+            <div className="max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-gray-800">
+                    
+                    {/* Brand Section */}
+                    <div className="md:col-span-5 space-y-6">
+                        <div className="text-4xl font-extrabold tracking-tight text-white">
+                            PHYO<span className="text-sky-500">.</span>
                         </div>
-                        <div className="w-full md:w-1/4">
-                            <h3 className="text-sm font-bold uppercase text-white mb-4">More TNW</h3>
-                            <ul class="space-y-2">
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Media</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Events</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Programs</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Spaces</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Newsletters</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Deals</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Jobs in tech</Link></li>
-                            </ul>
-                        </div>
-
-                        <div className="w-full md:w-1/4">
-                            <h3 className="text-sm font-bold uppercase text-white mb-4">About Phyo</h3>
-                            <ul className="space-y-2">
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Partner with us</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Jobs</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Terms & Conditions</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Cookie Statement</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Privacy Statement</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Editorial Policy</Link></li>
-                                <li><Link to="" className="text-gray-400 hover:text-sky-400 text-sm font-bold">Masthead</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="border-t border-gray-700 pt-6 text-center">
-
-                        <p className="text-white font-bold text-sm mb-2">PHYO</p>
-                        <p className="text-gray-500 text-xs">
-                            Copyright © {currentYear} PHYO. Made with <span className="text-red-500">❤️</span> in Myanmar.
+                        <p className="text-gray-400 max-w-sm leading-relaxed">
+                            Crafting digital experiences with precision and passion. Stay connected with us for the latest updates in tech and innovation.
                         </p>
+                        <div className="flex space-x-5">
+                            {socialLinks.map((social, index) => (
+                                <a 
+                                    key={index}
+                                    href={social.link} 
+                                    className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-sky-500 hover:text-white transition-all duration-300"
+                                >
+                                    <i className={`${social.icon} text-lg`}></i>
+                                </a>
+                            ))}
+                        </div>
                     </div>
 
-                </div>
-            </footer>
-        </div>
-    )
-}
+                    {/* Links Section 1 */}
+                    <div className="md:col-span-3">
+                        <h3 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Solutions</h3>
+                        <ul className="space-y-4 text-sm">
+                            {['Media', 'Events', 'Programs', 'Jobs in tech'].map((item) => (
+                                <li key={item}>
+                                    <Link to={`/${item.toLowerCase()}`} className="hover:text-sky-400 transition-colors duration-200 block">
+                                        {item}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
 
-export default Footer
+                    {/* Links Section 2 */}
+                    <div className="md:col-span-4">
+                        <h3 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Company</h3>
+                        <ul className="space-y-4 text-sm">
+                            {['Terms & Conditions', 'Privacy Statement', 'Cookie Statement', 'Editorial Policy'].map((item) => (
+                                <li key={item}>
+                                    <Link to={`/${item.toLowerCase()}`} className="hover:text-sky-400 transition-colors duration-200 block">
+                                        {item}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+
+                {/* Bottom Bar */}
+                <div className="mt-10 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-xs font-medium uppercase tracking-wider">
+                    <p>© {currentYear} PHYO. All Rights Reserved.</p>
+                    <p className="flex items-center">
+                        Made with <span className="text-rose-500 mx-1.5 text-base">♥</span> in Myanmar
+                    </p>
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;

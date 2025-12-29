@@ -16,8 +16,8 @@ const MyProjects = () => {
             <section className="bg-[#050505] bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] py-10">
                 <div className="max-w-7xl mx-auto px-10">
                     {/* Title  */}
-                    <h2 className="text-3xl font-bold text-white mb-10 text-center uppercase tracking-widest">
-                        Projects
+                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-20 text-center uppercase tracking-[0.2em]">
+                        My Projects
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

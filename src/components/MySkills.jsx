@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFigma, FaReact, FaJs, FaPython, FaPhp, FaLaravel, FaHtml5, FaWordpress } from 'react-icons/fa';
-import { SiTailwindcss, SiDjango, SiAdobephotoshop, SiOpenai, SiGooglecloud } from 'react-icons/si';
+import { SiTailwindcss, SiDjango, SiAdobephotoshop, SiOpenai, SiGooglecloud,SiMysql, SiPostgresql } from 'react-icons/si';
 
 const MySkills = () => {
     const skills = [
@@ -15,6 +15,8 @@ const MySkills = () => {
         { name: "Figma", icon: <FaFigma className="text-[#F24E1E]" /> },
         { name: "Photoshop", icon: <SiAdobephotoshop className="text-[#31A8FF]" /> },
         { name: "WordPress", icon: <FaWordpress className="text-[#21759B]" /> },
+        { name: "MySQL", icon: <SiMysql className="text-[#4479A1]" /> },
+        { name: "PostgreSQL", icon: <SiPostgresql className="text-[#336791]" /> },
         { name: "OpenAI", icon: <SiOpenai className="text-[#412991]" /> },
         { name: "Google Cloud", icon: <SiGooglecloud className="text-[#4285F4]" /> },
     ];
