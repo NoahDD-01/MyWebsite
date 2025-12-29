@@ -1,4 +1,5 @@
 import React from 'react';
+import officeTeam from "../assets/images/officeteam.jpg";
 
 const AboutUs = () => {
     return (
@@ -32,7 +33,7 @@ const AboutUs = () => {
                         {/* Image Placeholder - သင်တို့ Team ပုံ သို့မဟုတ် Office ပုံထည့်ရန် */}
                         <div className="relative aspect-video bg-white/10 rounded-3xl overflow-hidden border border-white/20">
                             <img
-                                src="/src/assets/images/officeteam.jpg"
+                                src={officeTeam}
                                 alt="Office Team"
                                 className="absolute inset-0 h-full w-full object-cover"
                             />
