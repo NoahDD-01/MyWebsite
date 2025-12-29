@@ -9,7 +9,7 @@ import OurWork from './pages/OurWork'
 import WhatIDo from './pages/WhatIDo'
 import AboutUs from './pages/AboutUs'
 import PageNotFoud from './pages/PageNotFoud'
-import ScrollToTop from './components/ScrolltoTop'
+import ScrollToTop from './components/ScrollToTop'
 
 
 const MainLayout = () => {
