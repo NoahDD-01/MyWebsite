@@ -6,7 +6,7 @@ const projects = [
     title: "E-Commerce Platform",
     category: "Web Development",
     description: "Modern online shopping experience with seamless payment integration.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000", // ဥပမာပုံ
+    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000", 
     tags: ["React", "Vite", "Tailwind"]
   },
   {
