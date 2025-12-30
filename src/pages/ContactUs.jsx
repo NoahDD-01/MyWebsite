@@ -3,7 +3,7 @@ import { FaPaperPlane, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const ContactUs = () => {
   return (
-    <div className="w-full text-white">
+    <div className="w-full text-white ">
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold uppercase tracking-[0.2em] mb-2">Get In Touch</h2>
         <p className="text-gray-500 text-sm">Have a project in mind? Let's build it together.</p>
@@ -20,7 +20,7 @@ const ContactUs = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3 text-gray-300 group">
               <div className="w-auto h-auto rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
-                <FaEnvelope className="text-sm" />
+                <FaEnvelope className="text-xl" />
               </div>
               <span className="text-sm">phyozawhein2000@email.com</span>
             </div>
@@ -33,7 +33,7 @@ const ContactUs = () => {
         </div>
 
         {/* Right: Modern Form Fields */}
-        <form className="space-y-5">
+        <form className="space-y-4">
           <div className="space-y-2">
             <label className="text-xs uppercase tracking-widest text-gray-500 ml-1">Your Name</label>
             <input
@@ -42,7 +42,14 @@ const ContactUs = () => {
               placeholder="Enter your name"
             />
           </div>
-
+          <div className="space-y-2">
+            <label className="text-xs uppercase tracking-widest text-gray-500 ml-1">Phone Number</label>
+            <input
+              type="tel"
+              className="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-all text-sm"
+              placeholder="09 xxx xxx xxx"
+            />
+          </div>
           <div className="space-y-2">
             <label className="text-xs uppercase tracking-widest text-gray-500 ml-1">Email Address</label>
             <input
