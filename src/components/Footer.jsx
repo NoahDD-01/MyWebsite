@@ -71,7 +71,7 @@ const Footer = () => {
                 <div className="mt-10 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-xs font-medium uppercase tracking-wider">
                     <p>© {currentYear} PHYO. All Rights Reserved.</p>
                     <p className="flex items-center">
-                        Made with <span className="text-rose-500 mx-1.5 text-base">♥</span> in Myanmar
+                        Made with <span className="text-rose-500 mx-1.5 text-base">PHYO</span> in Myanmar
                     </p>
                 </div>
             </div>
