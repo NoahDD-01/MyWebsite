@@ -10,6 +10,8 @@ import WhatIDo from './pages/WhatIDo'
 import AboutUs from './pages/AboutUs'
 import PageNotFoud from './pages/PageNotFoud'
 import ScrollToTop from './components/ScrollToTop'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const MainLayout = () => {
@@ -26,6 +28,7 @@ const App = () => {
   return (
     <BrowserRouter>
     <ScrollToTop />
+    <ToastContainer position="top-right" autoClose={3000} theme="dark" />
       <Routes>
         <Route element={<MainLayout />}>
           <Route path='/' element={<Home />} />
