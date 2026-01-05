@@ -1,4 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import ourportfolio1 from '../assets/images/ourporfiolio.avif';
+import ourportfolio2 from '../assets/images/photo1.avif';
+import ourportfolio3 from '../assets/images/photoavif.avif';
 
 const projects = [
   {
@@ -6,7 +10,7 @@ const projects = [
     title: "E-Commerce Platform",
     category: "Web Development",
     description: "Modern online shopping experience with seamless payment integration.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000", 
+    image: ourportfolio1, 
     tags: ["React", "Vite", "Tailwind"]
   },
   {
@@ -14,7 +18,7 @@ const projects = [
     title: "Service Booking App",
     category: "Mobile App",
     description: "Cross-platform mobile application for local service providers.",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1000",
+    image: ourportfolio2,
     tags: ["Flutter", "Firebase"]
   },
   {
@@ -22,12 +26,13 @@ const projects = [
     title: "Corporate Dashboard",
     category: "Web Development",
     description: "Internal software for data visualization and business analytics.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
+    image: ourportfolio3,
     tags: ["Next.js", "Chart.js"]
   }
 ];
 
 const OurWork = () => {
+  const { t } = useTranslation(); 
   return (
     <div className="min-h-screen bg-[#0A0F2C] py-20 px-6 md:px-20">
       <div className="max-w-6xl mx-auto">
@@ -37,7 +42,7 @@ const OurWork = () => {
             Our <span className="text-[#FF5F5F]">Portfolio</span>
           </h1>
           <p className="text-gray-400 max-w-2xl">
-            ကျွန်ုပ်တို့ Company မှ အောင်မြင်စွာ ရေးသားပေးခဲ့သော Web နှင့် Mobile Project အချို့ကို ဤနေရာတွင် ကြည့်ရှုနိုင်ပါသည်။
+           {t("OUR_WORK")}
           </p>
         </div>
 

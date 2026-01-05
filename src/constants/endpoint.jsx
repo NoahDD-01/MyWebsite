@@ -14,6 +14,17 @@ export const ENDPOINTS = {
 
     SERVICEBOX_LIST: "servicebox/",
 
+    PROJECTBOX_LIST : "projectbox/",
+
+    PROFILE_LIST : "profile/",
+
+    ABOUTUS_LIST : "aboutus/",
+
+    OURMISSION_LIST : "mission/",
+
+    CHOOSEUS_LIST : "chooseus/"
+
+
 
 
 };

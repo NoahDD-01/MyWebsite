@@ -17,7 +17,9 @@ i18n
                     "HERO_FUTURE": "Future",
                     "HERO_DESC": "Creative agency specializing in UI/UX design and professional web development. We build experiences that matter.",
                     "START_PROJECT": "Start a Project",
-                    "MY_PORTFOLIO": "My Portfolio"
+                    "MY_PORTFOLIO": "My Portfolio",
+                    "OUR_WORK" : "You can view some of the Web and Mobile projects successfully developed by our company here."
+
                 }
             },
             mm: {
@@ -30,7 +32,8 @@ i18n
                     "Contact Us": "ဆက်သွယ်ရန်",            
                     "HERO_DESC": "UI/UX ဒီဇိုင်းနှင့် ပရော်ဖက်ရှင်နယ် ဝဘ်ဆော့ဖ်ဝဲလ် ထုတ်လုပ်ရေးတွင် အထူးပြုသည့် ဖန်တီးမှုအေဂျင်စီ ဖြစ်ပါသည်။ ကျွန်ုပ်တို့သည် အရေးပါသော Software,Websit များကို တည်ဆောက်ပေးပါသည်။",
                     "START_PROJECT": "ပရောဂျက်စတင်ရန်",
-                    "MY_PORTFOLIO": "ကျွန်ုပ်၏ လက်ရာများ"
+                    "MY_PORTFOLIO": "ကျွန်ုပ်၏ လက်ရာများ",
+                    "OUR_WORK" : "ကျွန်ုပ်တို့ Company မှ အောင်မြင်စွာ ရေးသားပေးခဲ့သော Web နှင့် Mobile Project အချို့ကို ဤနေရာတွင် ကြည့်ရှုနိုင်ပါသည်။"
                 }
             }
         },

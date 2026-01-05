@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { getServicetextList } from '../services/ServiceTextService';
 import { getServiceBoxList } from '../services/ServiceBoxService';
-import {BASE_URL} from '../constants/endpoint'
+import {BASE_URL} from '../constants/endpoint';
 
 const Services = () => {
   const { i18n } = useTranslation();
